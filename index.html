@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- social:start -->
+<meta name="description" content="Six sessions, one real deck. Build a presentation that passes the 30-second test, using the only slide method with peer-reviewed evidence behind it. Free, by Phoebe Fu.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Learn with Phoebe">
+<meta property="og:title" content="Learn AI PPT with Phoebe">
+<meta property="og:description" content="Six sessions, one real deck. Build a presentation that passes the 30-second test, using the only slide method with peer-reviewed evidence behind it.">
+<meta property="og:url" content="https://phoebefu6.github.io/learn-ai-ppt-with-phoebe/">
+<meta property="og:image" content="https://phoebefu6.github.io/learn-ai-ppt-with-phoebe/assets/og-cover.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Learn AI PPT with Phoebe">
+<meta name="twitter:description" content="Six sessions, one real deck. Build a presentation that passes the 30-second test.">
+<meta name="twitter:image" content="https://phoebefu6.github.io/learn-ai-ppt-with-phoebe/assets/og-cover.png">
+<!-- social:end -->
+<title>Learn AI PPT with Phoebe</title>
+<link rel="stylesheet" href="assets/style.css?v=1">
+<style>
+
+  .stats-row { display: flex; gap: 2.4rem; margin-top: 1.5rem; flex-wrap: wrap; }
+  .stat b { display: block; font-size: 2.1rem; font-weight: 800; line-height: 1.05; font-variant-numeric: tabular-nums; }
+  .stat span { font-size: .72rem; opacity: .85; text-transform: uppercase; letter-spacing: .09em; font-weight: 600; }
+
+  .course-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr)); gap: 1rem; margin-top: 1.5rem; }
+  .course-card {
+    border: 1px solid var(--hairline);
+    border-top: 4px solid var(--diff, var(--indigo));
+    border-radius: var(--radius);
+    padding: 1.2rem 1.3rem 1.1rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    text-decoration: none;
+    color: var(--ink);
+    background: #fff;
+    transition: box-shadow .15s ease, border-color .15s ease, transform .15s ease;
+    position: relative;
+  }
+  .course-card:hover { border-color: var(--indigo-soft); border-top-color: var(--diff, var(--indigo)); box-shadow: 0 8px 28px rgba(147,51,234,.14); transform: translateY(-3px); }
+  .course-card .cicon { font-size: 1.7rem; line-height: 1; }
+  .course-card .cnum { font-size: .72rem; font-weight: 700; color: var(--indigo); text-transform: uppercase; letter-spacing: .1em; }
+  .course-card h3 { font-size: 1.05rem; font-weight: 800; line-height: 1.3; }
+  .course-card p { font-size: .85rem; color: var(--muted); flex: 1; }
+  .course-card .meta { display: flex; gap: .4rem; flex-wrap: wrap; }
+
+  .diff-legend { display: flex; gap: 1rem; margin-top: 1.6rem; font-size: .74rem; color: var(--muted); font-weight: 600; flex-wrap: wrap; }
+  .diff-legend i { display: inline-block; width: .85rem; height: .35rem; border-radius: 999px; margin-right: .35rem; vertical-align: middle; }
+
+  .paths { margin-top: 2.6rem; }
+  .paths h2 { font-size: 1.3rem; font-weight: 800; margin-bottom: .3rem; }
+  .paths .plede { color: var(--muted); font-size: .92rem; margin-bottom: .8rem; }
+  .path { display: flex; gap: .55rem; align-items: center; padding: .75rem 0; border-bottom: .5px solid var(--hairline); flex-wrap: wrap; }
+  .path:last-child { border-bottom: none; }
+  .path b { min-width: 15.5rem; font-size: .9rem; }
+  .path .pstep { background: var(--indigo-50); color: var(--indigo); border-radius: 999px; padding: .16rem .68rem; font-weight: 700; font-size: .8rem; text-decoration: none; transition: all .12s ease; }
+  .path .pstep:hover { background: var(--indigo); color: #fff; }
+  .path .parr { color: var(--faint); font-weight: 700; }
+
+  .mm-section { margin-top: 1.6rem; }
+  .mm-section h2 { font-size: 1.3rem; font-weight: 800; margin-bottom: .2rem; }
+  .mm-section .mm-lede { color: var(--muted); font-size: .92rem; margin-bottom: .4rem; }
+  .mm-wrap { border: 1px solid var(--hairline); border-radius: var(--radius); background: linear-gradient(180deg,#fff,#FDFAFF); padding: .6rem; overflow-x: auto; }
+  .mm-svg { width: 100%; height: auto; display: block; max-width: 60rem; margin: 0 auto; min-width: 34rem; }
+  .mm-link { cursor: pointer; text-decoration: none; }
+  .mm-node rect { transition: opacity .15s ease, filter .15s ease; }
+  .mm-node text { pointer-events: none; }
+  .mm-link:hover .mm-node rect { filter: brightness(1.06); }
+  .mm-edge { transition: opacity .15s ease; }
+
+  /* raster hero, one per course */
+  .hero-art { position: relative; margin: 1.8rem 0 0; border-radius: var(--radius); overflow: hidden; background: #17142A; }
+  .hero-art img { display: block; width: 100%; height: auto; }
+  .hero-art figcaption {
+    position: absolute; left: 0; right: 0; bottom: 0; padding: 1.1rem 1.3rem;
+    background: linear-gradient(to top, rgba(23,20,42,.94), rgba(23,20,42,0));
+    color: #fff; font-size: .84rem; line-height: 1.6;
+  }
+  .hero-art figcaption b { color: #FCD34D; }
+  @media (max-width: 720px) { .hero-art figcaption { position: static; background: #17142A; } }
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="eyebrow">Learn with Phoebe · Applied AI</div>
+    <h1>Learn AI <span class="accent">PPT</span> with Phoebe</h1>
+    <p class="sub">Six sessions, 45 minutes each, and one real deck you build across all of them. AI can make a presentation in thirty seconds. It cannot tell you whether the room understood it. This course teaches the part that decides: the 30-second test, the one slide method with peer-reviewed evidence behind it, and an honest read on which presentation advice you have been handed is research and which is just repeated a lot.</p>
+    <div class="stats-row">
+      <div class="stat"><b data-count="6">6</b><span>sessions</span></div>
+      <div class="stat"><b data-count="1">1</b><span>real deck you keep</span></div>
+      <div class="stat"><b data-count="27">27</b><span>% understood at the start</span></div>
+      <div class="stat"><b data-count="91">91</b><span>% by session 6</span></div>
+      <div class="stat"><b data-count="45">45</b><span>min per session</span></div>
+    </div>
+    <figure class="hero-art">
+      <img src="assets/hero.png" alt="A darkened boardroom. A beautifully designed chart glows on the projection screen while five of the six people in the front row look down into their phones, each face lit from below. One person at the end is still looking up.">
+      <figcaption><b>The deck was never the problem.</b> Five faces lit from below, one still looking up. Every tool in this course can produce the slide on that screen. None of them can produce the sixth person.</figcaption>
+    </figure>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section class="section">
+    <div class="paths" style="margin-top:0">
+      <h2>The six sessions 🎬 <span style="font-size:.85rem;font-weight:600;color:var(--muted)">· one real deck, built across all of them</span></h2>
+      <p class="plede">Pick a deck you genuinely have to present in the next month. Not a practice deck. Every session moves that one forward, and the order is deliberate, because the mistakes compound backwards: people design slides before they have an argument, and then no amount of design saves it.</p>
+    </div>
+
+    <div class="course-grid">
+      <a class="course-card" href="courses/01-the-30-second-test.html" style="--diff:#34D399">
+        <span class="cicon">⏱️</span>
+        <span class="cnum">Session 1 · easy</span>
+        <h3>The 30-second test</h3>
+        <p>Thirty seconds after your slide goes up, can the room say what you are asking for? Meet the test, watch a real slide climb from 27 percent understood to 91, and learn the method that has actual research behind it.</p>
+        <span class="meta"><span class="pill amber">▶ Start here</span></span>
+      </a>
+      <a class="course-card" href="courses/02-outline-first.html" style="--diff:#34D399">
+        <span class="cicon">🧱</span>
+        <span class="cnum">Session 2 · easy</span>
+        <h3>Outline first</h3>
+        <p>Your deck is an argument. Generate the structure, then kill half of it. Why every good AI deck tool puts an editable outline gate in front of you, and why the bad ones skip straight to slides.</p>
+        <span class="meta"><span class="pill">the argument</span></span>
+      </a>
+      <a class="course-card" href="courses/03-slides-that-carry.html" style="--diff:#FBBF24">
+        <span class="cicon">🎯</span>
+        <span class="cnum">Session 3 · medium</span>
+        <h3>Slides that carry</h3>
+        <p>Assertion-evidence in full: a sentence headline that states the message, one visual that proves it. One idea per slide, one hero number, and the three Mayer principles that decide whether any of it lands.</p>
+        <span class="meta"><span class="pill">biggest lever</span></span>
+      </a>
+      <a class="course-card" href="courses/04-charts-and-data.html" style="--diff:#FBBF24">
+        <span class="cicon">📊</span>
+        <span class="cnum">Session 4 · medium</span>
+        <h3>Charts and data</h3>
+        <p>Charts that argue instead of decorate, and where fabricated figures actually come from. Microsoft says Copilot is not optimised for verbatim reproduction of large inputs. That sentence is why your number drifted.</p>
+        <span class="meta"><span class="pill">integrity</span></span>
+      </a>
+      <a class="course-card" href="courses/05-build-the-deck.html" style="--diff:#FB923C">
+        <span class="cicon">🛠️</span>
+        <span class="cnum">Session 5 · hands-on</span>
+        <h3>Build the deck</h3>
+        <p>The real build, tool by tool, with the licence and export traps named: Copilot needs a Designer licence for half its features, Gamma flattens gradients, Canva warns your PPTX may not survive PowerPoint. Plus a course still selling a tool that no longer exists.</p>
+        <span class="meta"><span class="pill">the real thing</span></span>
+      </a>
+      <a class="course-card" href="courses/06-the-room.html" style="--diff:#FB923C">
+        <span class="cicon">🗣️</span>
+        <span class="cnum">Session 6 · hands-on</span>
+        <h3>The room</h3>
+        <p>Speaker notes, the Q and A you are dreading, and the accessibility pass no AI tool will do for you. This is where the last nine points of the score live, and no vendor claims WCAG conformance for its output.</p>
+        <span class="meta"><span class="pill amber">🔒 unlocks the ceiling</span></span>
+      </a>
+    </div>
+
+    <div class="diff-legend">
+      <span><i style="background:#34D399"></i>easy - everyone</span>
+      <span><i style="background:#FBBF24"></i>medium</span>
+      <span><i style="background:#FB923C"></i>hands-on</span>
+      <span><i style="background:#F87171"></i>hardest</span>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="paths" style="margin-top:0">
+      <h2>Your passport 🎫</h2>
+      <p class="plede">Clear all three quiz questions in a session and it gets stamped. Four stamps unlocks the accessibility lever in the simulator, which is the only way to reach 91 percent. There is an honest bypass if you would rather skip ahead.</p>
+    </div>
+    <div class="pp-strip"></div>
+  </section>
+
+  <section class="section">
+    <div class="paths">
+      <h2>Choose your path 🗺️</h2>
+      <p class="plede">Three doors into the same conviction: a slide earns a decision, or it is a document that wasted a room's afternoon.</p>
+      <div class="path"><b>🔥 Presenting this week</b>
+        <a class="pstep" href="courses/01-the-30-second-test.html">1</a><span class="parr">→</span>
+        <a class="pstep" href="courses/03-slides-that-carry.html">3</a><span class="parr">→</span>
+        <a class="pstep" href="courses/06-the-room.html">6</a>
+        <span style="font-size:.82rem;color:var(--muted)">the test, the headline rewrite, then the accessibility and Q and A pass</span>
+      </div>
+      <div class="path"><b>🧭 Building a deck from nothing</b>
+        <a class="pstep" href="courses/02-outline-first.html">2</a><span class="parr">→</span>
+        <a class="pstep" href="courses/03-slides-that-carry.html">3</a><span class="parr">→</span>
+        <a class="pstep" href="courses/05-build-the-deck.html">5</a>
+        <span style="font-size:.82rem;color:var(--muted)">argument first, then slides, then whichever tool you have a licence for</span>
+      </div>
+      <div class="path"><b>📐 The whole journey</b>
+        <a class="pstep" href="courses/01-the-30-second-test.html">1</a><span class="parr">→</span>
+        <a class="pstep" href="courses/02-outline-first.html">2</a><span class="parr">→</span>
+        <a class="pstep" href="courses/03-slides-that-carry.html">3</a><span class="parr">→</span>
+        <a class="pstep" href="courses/04-charts-and-data.html">4</a><span class="parr">→</span>
+        <a class="pstep" href="courses/05-build-the-deck.html">5</a><span class="parr">→</span>
+        <a class="pstep" href="courses/06-the-room.html">6</a>
+        <span style="font-size:.82rem;color:var(--muted)">27 to 91, and the ceiling is only reachable at the end</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="paths" style="margin-top:0">
+      <h2>What is honest here 🧾</h2>
+      <p class="plede">Three things this course will not do, said up front.</p>
+    </div>
+    <table class="clean">
+      <tr><th>Claim</th><th>Status</th></tr>
+      <tr><td>Assertion-evidence beats topic-plus-bullets on comprehension</td><td>Peer-reviewed. Garner and Alley 2013, 110 students, significant at p under .01</td></tr>
+      <tr><td>The 10/20/30 rule is optimal</td><td>Convention. Kawasaki's own reasoning, asserted from experience, no study behind it</td></tr>
+      <tr><td>The simulator's comprehension percentage</td><td>A teaching model of the research above, not a measurement of your room. The contrast ratio in it is real WCAG maths</td></tr>
+    </table>
+  </section>
+
+  <section class="section mm-section">
+    <h2>The knowledge map 🧠</h2>
+    <p class="mm-lede">The whole course at a glance - hover a session to spotlight its concepts, click any node to jump in.</p>
+    <div class="mm-wrap"><div id="mindmap"></div></div>
+  </section>
+
+  <footer class="pagefoot">
+    <span>learn-ai-ppt-with-phoebe · by Phoebe Fu &nbsp;·&nbsp; 📚 <a href="https://phoebefu6.github.io/learn-with-phoebe/">Learn with Phoebe ↗</a></span>
+    <span>Source map with every URL: <span class="mono">materials/official-course-map.md</span></span>
+  </footer>
+
+</main>
+
+<script>
+window.MINDMAP_DATA = {
+  title: "Learn\nAI PPT",
+  centerColor: "#4C1D95",
+  sessions: [
+    { label: "The 30-second\ntest", href: "courses/01-the-30-second-test.html", color: "#34D399",
+      concepts: [
+        { label: "The comprehension bar", href: "courses/01-the-30-second-test.html" },
+        { label: "Assertion-evidence", href: "courses/01-the-30-second-test.html" },
+        { label: "Evidence vs convention", href: "courses/01-the-30-second-test.html" } ] },
+    { label: "Outline\nfirst", href: "courses/02-outline-first.html", color: "#34D399",
+      concepts: [
+        { label: "A deck is an argument", href: "courses/02-outline-first.html" },
+        { label: "The outline gate", href: "courses/02-outline-first.html" },
+        { label: "Cutting half of it", href: "courses/02-outline-first.html" } ] },
+    { label: "Slides that\ncarry", href: "courses/03-slides-that-carry.html", color: "#FBBF24",
+      concepts: [
+        { label: "Sentence headline", href: "courses/03-slides-that-carry.html" },
+        { label: "One visual as evidence", href: "courses/03-slides-that-carry.html" },
+        { label: "Coherence and signaling", href: "courses/03-slides-that-carry.html" } ] },
+    { label: "Charts and\ndata", href: "courses/04-charts-and-data.html", color: "#FBBF24",
+      concepts: [
+        { label: "Charts that argue", href: "courses/04-charts-and-data.html" },
+        { label: "Where figures drift", href: "courses/04-charts-and-data.html" },
+        { label: "Cue the one number", href: "courses/04-charts-and-data.html" } ] },
+    { label: "Build the\ndeck", href: "courses/05-build-the-deck.html", color: "#FB923C",
+      concepts: [
+        { label: "Licence traps", href: "courses/05-build-the-deck.html" },
+        { label: "Export fidelity", href: "courses/05-build-the-deck.html" },
+        { label: "Curriculum decay", href: "courses/05-build-the-deck.html" } ] },
+    { label: "The\nroom", href: "courses/06-the-room.html", color: "#FB923C",
+      concepts: [
+        { label: "Speaker notes", href: "courses/06-the-room.html" },
+        { label: "Q and A prep", href: "courses/06-the-room.html" },
+        { label: "WCAG as a gate", href: "courses/06-the-room.html" } ] }
+  ]
+};
+</script>
+<script src="assets/mindmap.js?v=1"></script>
+<script src="assets/app.js?v=1"></script>
+</body>
+</html>

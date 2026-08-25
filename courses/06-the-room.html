@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- social:start -->
+<meta name="description" content="Session 6 of 6. The deck is built, now it has to survive a real room. Speaker notes that are cues not a script, the Q and A you are dreading, and the accessibility gate that is worth the last nine points.">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Learn with Phoebe">
+<meta property="og:title" content="The room - learn ai ppt with phoebe">
+<meta property="og:description" content="Session 6 of 6. The deck is built, now it has to survive a real room. Speaker notes as cues, an adversarial Q and A pass, and the accessibility gate worth the last nine points.">
+<meta property="og:url" content="https://phoebefu6.github.io/learn-ai-ppt-with-phoebe/courses/06-the-room.html">
+<meta property="og:image" content="https://phoebefu6.github.io/learn-ai-ppt-with-phoebe/assets/og-cover.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="The room - learn ai ppt with phoebe">
+<meta name="twitter:description" content="Session 6 of 6. Notes, Q and A, and the accessibility gate that owns the last nine points.">
+<meta name="twitter:image" content="https://phoebefu6.github.io/learn-ai-ppt-with-phoebe/assets/og-cover.png">
+<!-- social:end -->
+<title>Session 6 · The room - learn ai ppt with phoebe</title>
+<link rel="stylesheet" href="../assets/style.css?v=1">
+</head>
+<body>
+
+<div class="toolbar">
+  <div class="wrap">
+    <span class="crumb"><a href="../index.html">learn-ai-ppt-with-phoebe</a> / Session 6 of 6</span>
+    <button class="btn" id="toggle-all" type="button">Expand all</button>
+    <button class="btn primary" id="zoom-toggle" type="button">Projector zoom: off</button>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="eyebrow">Learn AI PPT with Phoebe · Session 6 of 6</div>
+    <h1>The <span class="accent">room</span></h1>
+    <p class="sub">Your deck is built. Now it has to survive a real room, a real Q and A, and a real person three rows back who cannot read pale text. Tonight owns the last nine points of the score: the ceiling has been 82 for five sessions, and the only route to 91 is the accessibility lever this session unlocks. We do notes that are cues rather than a script, a Q and A pass run as an adversary, the manual accessibility gate no AI tool will do for you, and an export check that stops your fonts falling over in someone else's software.</p>
+    <div class="chip-row">
+      <span class="chip level">🟠 Hands-on</span>
+      <span class="chip audience">Anyone who presents to a room · client pitch, board update, internal readout</span>
+      <span class="chip audience">Bring the deck you built in session 5</span>
+      <span class="chip time">45 min</span>
+    </div>
+    <div class="agenda">
+      <span class="a1" style="flex:1">0-3 · Where the ceiling came from</span>
+      <span class="a2" style="flex:4">3-18 · Notes, Q and A, accessibility, export</span>
+      <span class="a3" style="flex:5">18-40 · Build-along: the final pass</span>
+      <span class="a4" style="flex:1">40-45 · Q&amp;A</span>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- ============ INTRO ============ -->
+  <section class="section" id="intro">
+    <div class="section-kicker">
+      <span class="klabel">Part 0</span>
+      <h2>The last nine points</h2>
+    </div>
+    <p class="lede">Since session 1 the simulator has had one lever you could not reach. Sentence headlines, visual evidence, a coherence pass, a cued hero number: all four on, and the number stops at <strong>82 percent</strong>. That is not a bug in the model and it is not a teaching trick. <strong>The only route from 82 to 91 is the accessibility lever, and this session is where you get it.</strong></p>
+
+    <figure class="zoomable">
+      <svg viewBox="0 0 880 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A gauge showing the simulator ceiling of 82 percent understood with every design lever on, and a locked nine point gap up to 91 percent held by the accessibility lever">
+        <style>
+          .s6aL { font: 700 11px Inter, sans-serif; fill: #6B6480; letter-spacing: .06em; }
+          .s6aV { font: 800 20px Inter, sans-serif; fill: #fff; }
+          .s6aT { font: 700 12px Inter, sans-serif; fill: #3A2400; }
+          .s6aM { font: 700 12px Inter, sans-serif; fill: #4C1D95; }
+          .s6aN { font: 400 12px Inter, sans-serif; fill: #6B6480; }
+        </style>
+        <text class="s6aL" x="120" y="66">EVERY DESIGN LEVER ON, ACCESSIBILITY LEVER STILL LOCKED</text>
+        <rect x="120" y="97" width="640" height="26" rx="13" fill="#E7E2EF"/>
+        <rect x="632" y="97" width="70" height="26" fill="#F59E0B"/>
+        <rect x="120" y="97" width="525" height="26" rx="13" fill="#9333EA"/>
+        <text class="s6aV" x="136" y="116">82%</text>
+        <text class="s6aT" x="673" y="88" text-anchor="middle">+9</text>
+        <line x1="702" y1="79" x2="702" y2="141" stroke="#4C1D95" stroke-width="2.5"/>
+        <text class="s6aM" x="702" y="71" text-anchor="middle">91% ceiling</text>
+        <text class="s6aN" x="120" y="164">The amber sliver is tonight. It is the widest single lever left in the course.</text>
+        <text class="s6aN" x="120" y="196">Nine points for contrast, titles and alt text. None of it is design taste.</text>
+      </svg>
+      <figcaption>🔍 Click to zoom - the last nine points are an accessibility fix, not a design flourish</figcaption>
+    </figure>
+
+    <div class="legend">
+      <span class="pill">🎫 Clear all three quiz questions to stamp your passport</span>
+      <span class="pill">Live = presented in the 45 minutes</span>
+      <span class="pill">Self-study = the full depth, after class</span>
+    </div>
+
+    <div class="callout win">
+      <p><strong>★ What you walk out with tonight.</strong> Speaker notes you can actually glance at, three answers already sitting in your appendix, a deck whose body text clears 4.5:1 with every slide titled and every visual described, and an export you have opened in the software the room will use. That is the finished artifact.</p>
+    </div>
+
+    <details class="card" open>
+      <summary><span class="mode live">Live</span>Why accessibility is worth more than another redesign<span class="mini">3 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>It sounds like the tidy-up session. It is not. Look at what the four design levers are actually doing: they help a person who can read the slide. The accessibility lever changes <em>who can read the slide at all</em>, and in a room of twelve that is not a rounding error.</p>
+        <p>Run the ladder back in your head. Headline 27 to 48. Visual evidence to 64. Coherence to 73. Cue the hero number to 82. Then nine points, from one thing: the text finally clears the contrast standard. Every lever before tonight was a judgement call you could argue about. This one is arithmetic with a published threshold.</p>
+        <div class="callout example">
+          <span class="ex-pill">Real world</span>
+          <p>A pricing deck goes up in a boardroom with the blinds open. The pale violet caption under the chart holds the only figure that matters. Two people at the far end of the table never see it, do not say so, and abstain. The deck did not fail on structure.</p>
+        </div>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ PART 1 ============ -->
+  <section class="section" id="part-1">
+    <div class="section-kicker">
+      <span class="klabel">Part 1 · covers Copilot speaker notes and Mayer redundancy</span>
+      <h2>Speaker notes that are not a script</h2>
+      <span class="tag concept">5 min live</span>
+    </div>
+    <p class="lede">Copilot will generate speaker notes for all slides, or for just the current slide, and Microsoft is clear that the feature works best on presentations with fewer than 50 slides. It will happily write you a paragraph per slide. That paragraph is the trap, because a paragraph is a script, and a script is something you read out loud.</p>
+
+    <figure class="zoomable">
+      <svg viewBox="0 0 880 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Two speaker note styles compared: a verbatim paragraph script costing twenty points of comprehension, versus short cues and transitions that cost nothing">
+        <style>
+          .s6bH { font: 800 13px Inter, sans-serif; }
+          .s6bB { font: 400 12px Inter, sans-serif; fill: #1E1B29; }
+          .s6bN { font: 400 12px Inter, sans-serif; fill: #6B6480; }
+        </style>
+        <rect x="40" y="50" width="390" height="180" rx="12" fill="#FEF2F2" stroke="#FCA5A5" stroke-width="1.5"/>
+        <text class="s6bH" x="58" y="84" fill="#991B1B">✗ The generated paragraph</text>
+        <text class="s6bB" x="58" y="114">Full sentences, written to be spoken</text>
+        <text class="s6bB" x="58" y="134">Repeats what is already on the slide</text>
+        <text class="s6bB" x="58" y="154">You find your place by reading</text>
+        <text class="s6bB" x="58" y="184" fill="#991B1B">Read it aloud: 91 drops to 71</text>
+        <rect x="450" y="50" width="390" height="180" rx="12" fill="#F8F0FF" stroke="#9333EA" stroke-width="1.5"/>
+        <text class="s6bH" x="468" y="84" fill="#4C1D95">✓ Cues and transitions</text>
+        <text class="s6bB" x="468" y="114">Three fragments, not three sentences</text>
+        <text class="s6bB" x="468" y="134">Says nothing the slide already says</text>
+        <text class="s6bB" x="468" y="154">One exact number, so you cannot misquote</text>
+        <text class="s6bB" x="468" y="184" fill="#4C1D95">Read it aloud: there is nothing to read</text>
+        <text class="s6bN" x="40" y="276">Mayer's redundancy principle. On-screen words plus identical narration is the worst of the three.</text>
+      </svg>
+      <figcaption>🔍 Click to zoom - the fix for the read-aloud trap is written into the notes, not into your willpower</figcaption>
+    </figure>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>The three things a note should hold<span class="mini">4 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>A speaker note is a glance, not a text. You look down for about a second and a half. Anything that needs a second look is not a note, it is a document, and it belongs in the appendix.</p>
+        <ul>
+          <li><strong>The cue.</strong> Three or four words that restart your brain. "EMEA is the whole gap." Not a sentence, a hook.</li>
+          <li><strong>The transition.</strong> One fragment naming where you are going next, because the joins are where people lose the thread of an argument, not the slides.</li>
+          <li><strong>The one number you must not misquote.</strong> Written out exactly, with its unit and its period. This is the only place verbatim text belongs.</li>
+        </ul>
+        <p>Everything else that Copilot generated, delete. You are not deleting information, you are moving it out of the one place where reading it costs you twenty points.</p>
+        <div class="prompt-box bad">
+          <span class="label">✗ What you get if you just ask for notes</span>
+In this slide we will review the Q3 revenue performance across all
+regions. As you can see, revenue came in at 8 percent below plan,
+which was largely driven by the EMEA region. We will now look at
+the underlying drivers of that shortfall in more detail.
+        </div>
+        <div class="prompt-box good">
+          <span class="label">★ Ask for the note you can actually use</span>
+Rewrite the speaker notes for every slide as glance cues, not prose.
+Per slide, at most: one 4-word cue, one transition fragment naming
+the next slide, and the single figure I must quote exactly with its
+unit and period. No full sentences. Nothing that repeats the slide
+text. If a slide has no figure worth quoting, leave that line out.
+        </div>
+        <p>Then read your own notes back with one question: could I say this without looking down twice?</p>
+      </div>
+    </details>
+
+    <div class="tryrow" data-fn="wordcount" data-multiline="1" data-title="How long does that note take to say out loud?" data-hint="Paste the notes from your busiest slide" data-seed="In this slide we will review the Q3 revenue performance across all regions. As you can see, revenue came in at 8 percent below plan, which was largely driven by the EMEA region. We will now look at the underlying drivers of that shortfall in more detail." data-cta="Time it" data-foot="Read-aloud seconds is the honest measure of a speaker note. Over about 12 seconds and you are reading, not presenting."></div>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>Notes at scale, and where the 50-slide limit bites<span class="mini">4 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Generating notes for all slides in one pass is the genuinely useful version of the feature, and Microsoft states it works best under 50 slides. If your deck is longer than that, the honest read is not "the feature is broken", it is that your deck is two decks.</p>
+        <p>Two practical habits that follow from the limit:</p>
+        <table class="clean">
+          <tr><th>Habit</th><th>Why</th></tr>
+          <tr><td>Generate notes last, after the deck stops changing</td><td>Notes generated against an earlier draft describe slides that no longer exist, and nothing warns you</td></tr>
+          <tr><td>Generate for the whole deck, then edit slide by slide</td><td>The whole-deck pass gets the transitions roughly right. The per-slide pass is where you cut prose down to cues</td></tr>
+        </table>
+        <p>One more thing worth knowing before you present from a laptop you do not own: notes live in the file, so they travel with an export only if the export format carries them. A PDF handout does not.</p>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ PART 2 ============ -->
+  <section class="section" id="part-2">
+    <div class="section-kicker">
+      <span class="klabel">Part 2 · covers Copilot structural review</span>
+      <h2>The Q and A you are dreading</h2>
+      <span class="tag concept">4 min live</span>
+    </div>
+    <p class="lede">Copilot has a documented skill for anticipating audience questions and for slide-by-slide structural review. Most people use it as a cheerleader and get told the deck is well structured and compelling. Used as an adversary it is one of the highest-value passes in this whole course, because it finds the question you already know is coming and have been avoiding.</p>
+
+    <div class="wipe" data-title="Same tool, two prompts" data-label-a="The cheerleader" data-label-b="The adversary" data-foot="Drag right to left. One of these gives you three appendix slides, the other gives you reassurance.">
+      <div class="wipe-a">
+        <p><strong>"Review my deck and tell me if it is ready to present."</strong></p>
+        <p>You get a structural compliment, a note that the flow is logical, and a suggestion to consider adding a summary slide. Nothing in it changes your deck, and nothing in it survives contact with the one person in the room who does not want your proposal to happen.</p>
+      </div>
+      <div class="wipe-b">
+        <p><strong>"You are the most sceptical person in that room. Per slide, name the one question that would embarrass me and the figure I would be asked to defend. Do not compliment anything."</strong></p>
+        <p>You get a list, and three items on it are genuinely uncomfortable. Those three are your work for the next twenty minutes.</p>
+      </div>
+    </div>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>The discipline: three questions, three appendix slides<span class="mini">4 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Take the list and cut it to the <strong>three questions that would actually embarrass you</strong>. Not the three most likely. The three you would rather not be asked, which is a different and much shorter list.</p>
+        <p>Then do the thing almost nobody does: <strong>build each answer as a real slide and put it in the appendix.</strong> Titled, sourced, laid out properly. Session 2 taught the appendix as a destination rather than a dumping ground, and this is what it was a destination for.</p>
+        <p>The difference in the room is large and specific. "I will follow up on that" ends a thread and loses momentum. Jumping to a slide that already answers it does three things at once: it answers, it shows you had already thought about it, and it moves the meeting on.</p>
+        <div class="callout tip">
+          <p>Do the adversarial pass on a copy of the deck, before you write speaker notes. Half the time it changes a main-deck slide, and you do not want to be rewriting notes for slides you are about to move.</p>
+        </div>
+        <p>One honest limit: a model anticipating audience questions is generating plausible objections, not reading your stakeholders. It is very good at finding the unsupported claim on the slide. It cannot know that the finance director has been burned by this vendor before. You still supply the room.</p>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ PART 3 ============ -->
+  <section class="section" id="part-3">
+    <div class="section-kicker">
+      <span class="klabel">Part 3 · covers WCAG 1.4.3, Microsoft accessibility, vendor a11y claims</span>
+      <h2>Accessibility is a manual gate, and you own it</h2>
+      <span class="tag concept">7 min live</span>
+    </div>
+    <p class="lede">This is the heart of the session and the reason the ceiling was 82. It is also the part where the tools stop helping you, on the record and in their own words. Nothing here is difficult. All of it is manual.</p>
+
+    <figure class="zoomable">
+      <svg viewBox="0 0 880 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Four real WCAG contrast ratios measured against the 4.5 to 1 threshold: white on pale violet at 1.76 to 1 fails, violet on white at 3.95 to 1 passes only for large text, grey on off-white at 5.02 to 1 passes, and near-black on white at 16.88 to 1 passes AAA">
+        <style>
+          .s6cL { font: 700 11px Inter, sans-serif; fill: #6B6480; letter-spacing: .06em; }
+          .s6cR { font: 400 12px Inter, sans-serif; fill: #1E1B29; }
+          .s6cV { font: 700 12px Inter, sans-serif; fill: #1E1B29; }
+          .s6cT { font: 700 11px Inter, sans-serif; fill: #3A2400; }
+          .s6cN { font: 400 12px Inter, sans-serif; fill: #6B6480; }
+        </style>
+        <text class="s6cL" x="40" y="64">REAL WCAG RATIOS, FLOORED AND NEVER ROUNDED UP</text>
+        <text class="s6cT" x="407" y="80" text-anchor="middle">4.5:1</text>
+        <line x1="407" y1="84" x2="407" y2="280" stroke="#F59E0B" stroke-width="2" stroke-dasharray="4 3"/>
+        <text class="s6cR" x="40" y="106">White on pale violet</text>
+        <text class="s6cV" x="278" y="106" text-anchor="end">1.76:1</text>
+        <rect x="290" y="90" width="46" height="22" rx="4" fill="#991B1B"/>
+        <text class="s6cV" x="744" y="106" fill="#991B1B">FAIL</text>
+        <text class="s6cR" x="40" y="158">Violet on white</text>
+        <text class="s6cV" x="278" y="158" text-anchor="end">3.95:1</text>
+        <rect x="290" y="142" width="103" height="22" rx="4" fill="#F59E0B"/>
+        <text class="s6cV" x="744" y="158" fill="#3A2400">LARGE</text>
+        <text class="s6cR" x="40" y="210">Grey text, off-white</text>
+        <text class="s6cV" x="278" y="210" text-anchor="end">5.02:1</text>
+        <rect x="290" y="194" width="131" height="22" rx="4" fill="#9333EA"/>
+        <text class="s6cV" x="744" y="210" fill="#4C1D95">PASS</text>
+        <text class="s6cR" x="40" y="262">Near-black on white</text>
+        <text class="s6cV" x="278" y="262" text-anchor="end">16.88:1</text>
+        <rect x="290" y="246" width="440" height="22" rx="4" fill="#4C1D95"/>
+        <text class="s6cV" x="744" y="262" fill="#4C1D95">AAA</text>
+        <text class="s6cN" x="40" y="292">Row 2 is the one that catches people: fine at 18pt, a failure in body copy.</text>
+      </svg>
+      <figcaption>🔍 Click to zoom - the threshold is a line, not a gradient, and 4.499:1 lands on the wrong side of it</figcaption>
+    </figure>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>SC 1.4.3, in the only detail that matters<span class="mini">3 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>WCAG 2.2 success criterion 1.4.3 sets a contrast minimum: <strong>4.5:1 for normal text, and 3:1 for large text</strong>, where large means 18pt, or 14pt bold. That is the whole rule you need to carry.</p>
+        <p>Two details that people get wrong and then argue about:</p>
+        <ul>
+          <li><strong>Ratios are never rounded.</strong> 4.499:1 fails. There is no "close enough" band, which is the entire point of having a number rather than an opinion.</li>
+          <li><strong>Large text is a real exemption, not a loophole.</strong> Your section headers may legitimately sit at 3:1. Your body copy, your chart labels and your source lines may not, and those are exactly where AI-generated decks put pale type.</li>
+        </ul>
+        <p>Session 1 introduced this and told you it would become a gate. This is the gate.</p>
+      </div>
+    </details>
+
+    <div class="tryrow" data-fn="contrast" data-title="The pair every AI deck generator loves" data-hint="#FFFFFF #D8B4FE" data-seed="#FFFFFF #D8B4FE" data-cta="Check contrast" data-foot="White on a pale violet fill. It looks calm and expensive on your laptop, and it misses the body-text threshold by more than a factor of two."></div>
+
+    <figure class="zoomable">
+      <svg viewBox="0 0 880 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="The four things Microsoft says an accessible deck must have: unique slide titles, correct reading order, alt text on every meaningful visual, and a run of the built-in Accessibility Checker">
+        <style>
+          .s6dL { font: 700 11px Inter, sans-serif; fill: #6B6480; letter-spacing: .06em; }
+          .s6dH { font: 700 12.5px Inter, sans-serif; fill: #4C1D95; }
+          .s6dB { font: 400 12px Inter, sans-serif; fill: #1E1B29; }
+          .s6dX { font: 800 12px Inter, sans-serif; fill: #fff; }
+          .s6dN { font: 400 12px Inter, sans-serif; fill: #6B6480; }
+        </style>
+        <text class="s6dL" x="40" y="34">WHAT A DECK MUST ACTUALLY HAVE, PER MICROSOFT</text>
+        <rect x="40" y="52" width="800" height="44" rx="10" fill="#F8F0FF" stroke="#CFC8DC" stroke-width="1.5"/>
+        <circle cx="66" cy="74" r="11" fill="#9333EA"/>
+        <text class="s6dX" x="66" y="78" text-anchor="middle">1</text>
+        <text class="s6dH" x="88" y="78">Unique slide titles</text>
+        <text class="s6dB" x="330" y="78">Blind and low-vision users navigate the deck by its titles.</text>
+        <rect x="40" y="102" width="800" height="44" rx="10" fill="#F8F0FF" stroke="#CFC8DC" stroke-width="1.5"/>
+        <circle cx="66" cy="124" r="11" fill="#9333EA"/>
+        <text class="s6dX" x="66" y="128" text-anchor="middle">2</text>
+        <text class="s6dH" x="88" y="128">Correct reading order</text>
+        <text class="s6dB" x="330" y="128">Screen readers read in the order elements were added.</text>
+        <rect x="40" y="152" width="800" height="44" rx="10" fill="#F8F0FF" stroke="#CFC8DC" stroke-width="1.5"/>
+        <circle cx="66" cy="174" r="11" fill="#9333EA"/>
+        <text class="s6dX" x="66" y="178" text-anchor="middle">3</text>
+        <text class="s6dH" x="88" y="178">Alt text on visuals</text>
+        <text class="s6dB" x="330" y="178">A chart with no alt text is a blank space, not a chart.</text>
+        <rect x="40" y="202" width="800" height="44" rx="10" fill="#FFF7E6" stroke="#F59E0B" stroke-width="1.5"/>
+        <circle cx="66" cy="224" r="11" fill="#F59E0B"/>
+        <text class="s6dX" x="66" y="228" text-anchor="middle">4</text>
+        <text class="s6dH" x="88" y="228" fill="#3A2400">Accessibility Checker</text>
+        <text class="s6dB" x="330" y="228">Built in, and it flags insufficient contrast for you.</text>
+        <text class="s6dN" x="40" y="278">Four items. All four are manual. No AI deck tool does any of them for you.</text>
+      </svg>
+      <figcaption>🔍 Click to zoom - the checker catches contrast, but titles, order and alt text are yours</figcaption>
+    </figure>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>Reading order is the one that surprises people<span class="mini">4 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Titles and alt text are obvious once said. Reading order is not, and it is the one that quietly breaks AI-generated slides.</p>
+        <p>A screen reader does not read your slide the way your eye reads it. It reads elements <strong>in the order they were added</strong>, not in the visual order they ended up in. So a slide where you dropped the chart in first, then added the headline above it, then squeezed a caption in beside it, reads as: chart, headline, caption. Which is not the argument you built.</p>
+        <p>This matters more after a generation pass than after hand-building, because you did not add those elements and you have no idea what order they went in. Check it, do not assume it.</p>
+        <div class="callout example">
+          <span class="ex-pill">Real world</span>
+          <p>A generated deck goes out as the pre-read for an accessibility review board. Every slide is titled "Slide". The reviewer using a screen reader cannot navigate the deck at all, and the meeting is about accessibility. That happened, and no tool warned anyone.</p>
+        </div>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>The honest bottom line on the tools<span class="mini">3 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Say this out loud in your own words the first time someone assumes otherwise: <strong>no AI deck tool claims WCAG conformance for its output.</strong> Not one. This is not a gap someone is about to close for you.</p>
+        <p>Canva states it plainly in its own help documentation: <em>"No automated accessibility checker can guarantee accessibility compliance as it requires manual testing to ensure it works with all assistive technologies."</em> That is a vendor telling you, correctly, that the last mile is yours.</p>
+        <p>Gamma has completed no formal screen-reader audit and makes no specific compatibility claims. That is not an accusation, it is the state of the documentation.</p>
+        <div class="callout tip">
+          <p>The useful framing for a client or a boss: an automated checker is a smoke alarm, not a fire inspection. It tells you about the failures it can detect. It cannot tell you the deck works for a person using assistive technology, and it does not claim to.</p>
+        </div>
+        <p><strong>So this is a gate you own, permanently.</strong> Four items, one checker run, every deck, for the rest of your career. It takes about six minutes on a twelve-slide deck once you have done it twice.</p>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ PART 4 ============ -->
+  <section class="section" id="part-4">
+    <div class="section-kicker">
+      <span class="klabel">Part 4 · covers the verified export traps</span>
+      <h2>Export without breakage</h2>
+      <span class="tag concept">3 min live</span>
+    </div>
+    <p class="lede">Every tool exports. None of them export into exactly the thing you saw. This is short because the fix is short: you already know the traps from session 5, and the only new thing tonight is the habit that catches all of them at once.</p>
+
+    <figure class="zoomable">
+      <svg viewBox="0 0 880 340" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A decision tree from where the room will open the file to the documented export catch for PowerPoint, Google Slides and the tool's own player">
+        <style>
+          .s6eR { font: 700 13px Inter, sans-serif; fill: #fff; }
+          .s6eH { font: 700 12.5px Inter, sans-serif; fill: #4C1D95; }
+          .s6eB { font: 400 12px Inter, sans-serif; fill: #1E1B29; }
+          .s6eN { font: 400 12px Inter, sans-serif; fill: #6B6480; }
+        </style>
+        <rect x="300" y="34" width="280" height="42" rx="10" fill="#4C1D95"/>
+        <text class="s6eR" x="440" y="60" text-anchor="middle">Where will the room open it?</text>
+        <path d="M440 76 L440 108 M150 108 L730 108 M150 108 L150 140 M440 108 L440 140 M730 108 L730 140" stroke="#CFC8DC" stroke-width="2" fill="none"/>
+        <rect x="30" y="140" width="240" height="34" rx="8" fill="#E7E2EF"/>
+        <text class="s6eH" x="150" y="162" text-anchor="middle">PowerPoint</text>
+        <rect x="320" y="140" width="240" height="34" rx="8" fill="#E7E2EF"/>
+        <text class="s6eH" x="440" y="162" text-anchor="middle">Google Slides</text>
+        <rect x="610" y="140" width="240" height="34" rx="8" fill="#E7E2EF"/>
+        <text class="s6eH" x="730" y="162" text-anchor="middle">The tool's own player</text>
+        <rect x="30" y="192" width="240" height="78" rx="10" fill="#FFF7E6" stroke="#F59E0B" stroke-width="1.5"/>
+        <text class="s6eB" x="46" y="216">Canva: "may look</text>
+        <text class="s6eB" x="46" y="234">different" in PowerPoint.</text>
+        <text class="s6eB" x="46" y="252">Install the fonts locally.</text>
+        <rect x="320" y="192" width="240" height="78" rx="10" fill="#FFF7E6" stroke="#F59E0B" stroke-width="1.5"/>
+        <text class="s6eB" x="336" y="216">Slides ignores fonts you</text>
+        <text class="s6eB" x="336" y="234">embedded in the PPTX.</text>
+        <text class="s6eB" x="336" y="252">Choose a font it has.</text>
+        <rect x="610" y="192" width="240" height="78" rx="10" fill="#FFF7E6" stroke="#F59E0B" stroke-width="1.5"/>
+        <text class="s6eB" x="626" y="216">Gamma exports Present</text>
+        <text class="s6eB" x="626" y="234">Mode, not Edit Mode.</text>
+        <text class="s6eB" x="626" y="252">Gradients may flatten.</text>
+        <text class="s6eN" x="30" y="300">Canva PPTX also drops animations and embedded video. Plan for a still deck.</text>
+        <text class="s6eN" x="30" y="324">The habit that catches all three: open the export where the room will open it.</text>
+      </svg>
+      <figcaption>🔍 Click to zoom - the catch depends entirely on whose software the file lands in</figcaption>
+    </figure>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>The pre-send check, in four minutes<span class="mini">3 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Not a full re-review. Four minutes, three things, every time.</p>
+        <div class="steps">
+          <div class="step"><p><strong>Export, then open it in the tool the room will use.</strong> Not a preview inside the tool that made it. The actual software on the actual laptop that will be plugged in.</p></div>
+          <div class="step"><p><strong>Check page 1 and your busiest chart.</strong> Page 1 tells you whether the fonts survived. The busiest chart tells you whether anything reflowed, overlapped or flattened.</p></div>
+          <div class="step"><p><strong>Check the fonts by name, not by vibe.</strong> A substituted font looks nearly right and changes every line break. If it has been swapped, you will see it in the longest headline first.</p></div>
+        </div>
+        <p>If you are presenting from someone else's machine, send a PDF as well and stop worrying. A PDF loses your notes and your animations, and it keeps your layout, which on a strange laptop is the better trade.</p>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ BUILD-ALONG ============ -->
+  <section class="section" id="demo-6">
+    <div class="section-kicker">
+      <span class="klabel">Build-along</span>
+      <h2>The final pass on your deck</h2>
+      <span class="tag demo">★ 22 min · everyone builds</span>
+    </div>
+    <p class="lede">Twenty-two minutes, your real deck, in order. Notes, then the adversarial pass, then accessibility, then export. Do it in that order, because each one changes slides that the next one has to look at.</p>
+
+    <div class="tryrow" data-fn="contrast" data-title="Measure the failing case, then measure your own deck" data-hint="#FFFFFF #D8B4FE" data-seed="#FFFFFF #D8B4FE" data-cta="Check contrast" data-foot="Run the seeded pair first so you know what a failure looks like. Then paste your own body-text colour and your own slide background, in that order."></div>
+
+    <div class="tick" data-stages="Notes|Q and A|Access|Export|Open there" data-title="The pre-send sequence, in the order that works" data-foot="Four passes and one check. Roughly twenty minutes on a twelve-slide deck, once you have done it twice.">
+      <p class="tick-note" data-stage="0"><b>Notes.</b> Generate for the whole deck, then cut every slide down to a cue, a transition and the one figure you must quote exactly. Delete the prose.</p>
+      <p class="tick-note" data-stage="1"><b>Q and A.</b> Run the adversarial prompt. Pick the three questions that would embarrass you, and build each answer as a real appendix slide.</p>
+      <p class="tick-note" data-stage="2"><b>Access.</b> Unique titles on every slide. Reading order checked, not assumed. Alt text on every meaningful visual. Body text at 4.5:1. Then run the Accessibility Checker.</p>
+      <p class="tick-note" data-stage="3"><b>Export.</b> Into the format the room needs, knowing which of the three catches applies to your tool.</p>
+      <p class="tick-note" data-stage="4"><b>Open there.</b> Open the exported file in the software that will actually be projecting. Page 1, busiest chart, fonts by name.</p>
+    </div>
+
+    <div class="scorecard" data-title="Final scorecard: the deck you are about to present">
+      <div class="sc-row"><div class="sc-q">Every headline is a sentence that states the message
+        <em>Not a topic label with a verb in it. Read them in a list with no slides: does the list argue?</em></div></div>
+      <div class="sc-row"><div class="sc-q">Every figure traces to a source you can open
+        <em>Not "it looked right". You can point at the cell, the row, the report page.</em></div></div>
+      <div class="sc-row"><div class="sc-q">The deciding number is cued on every chart that has one
+        <em>If a chart has a number that decides something, a stranger should find it without being told.</em></div></div>
+      <div class="sc-row"><div class="sc-q">Body text clears 4.5:1
+        <em>Measured, not eyeballed. Chart labels and source lines count as body text.</em></div></div>
+      <div class="sc-row"><div class="sc-q">Every slide has a unique title, and every visual has alt text
+        <em>No slide called "Slide". No chart with an empty description. Checker run and clean.</em></div></div>
+    </div>
+
+    <div class="stakes" data-base="82" data-unit="% understood" data-title="What the accessibility pass is actually worth" data-foot="Simulator canon: the accessibility lever is the only route from 82 to 91. The two traps backfire from the 91 ceiling.">
+      <label><input type="checkbox" data-delta="9"> Body text clears 4.5:1, so the room can read the slide at all</label>
+      <label><input type="checkbox" data-delta="-20" data-trap="1"> You put the script on the slide and read it aloud, to be safe</label>
+      <label><input type="checkbox" data-delta="-15" data-trap="1"> You add more bullets so that nothing gets missed</label>
+    </div>
+
+    <div class="callout tip">
+      <p><strong>If you have ten minutes and not twenty-two.</strong> Do titles and contrast. Unique title on every slide, body text over 4.5:1. That is most of the nine points, and it is the part nothing else in the deck can compensate for.</p>
+    </div>
+
+    <div class="callout win">
+      <p><strong>★ Go back and finish the ladder.</strong> Your passport should be full now, which means the locked rung in the session 1 simulator is open. Go and switch on all five levers and watch it land on 91. It is a small thing and it is worth doing, because you have spent six sessions being told about a number you could not reach.</p>
+    </div>
+  </section>
+
+  <!-- ============ HOMEWORK ============ -->
+  <section class="section" id="exercise">
+    <div class="section-kicker">
+      <span class="klabel">Homework</span>
+      <h2>The last one: present it</h2>
+      <span class="tag exercise">the meeting, plus 10 min after</span>
+    </div>
+    <ol>
+      <li><strong>Present the deck.</strong> The real one, in the real room. This has been the point since session 1, and there is no version of this homework you can do at your desk.</li>
+      <li><strong>Write down what the room actually asked.</strong> Immediately after, before you talk yourself out of remembering. The literal questions, in their words, not your tidy summary of them.</li>
+      <li><strong>Compare that list to your three appendix slides.</strong> How many did you predict? Whichever you missed is the most useful thing you will learn this month, and it tells you what your adversarial prompt is blind to.</li>
+      <li><strong>Get one real 30-second score, one last time.</strong> Same test as session 1, on the same slide if you still have it. That delta is your actual result from this course, and the simulator was only ever a model of it.</li>
+      <li><strong>Re-run the simulator with every lever on.</strong> The passport is full, the top rung is unlocked, and 91 is finally reachable. Then switch on both traps from there and watch twenty and fifteen points go, because that is the version of the lesson you will remember in a room.</li>
+    </ol>
+  </section>
+
+  <!-- ============ QUIZ ============ -->
+  <section class="section" id="quiz">
+    <div class="section-kicker">
+      <span class="klabel">Check yourself</span>
+      <h2>Three questions</h2>
+    </div>
+    <p>Clear all three and session 6 gets stamped in your passport, which completes the set.</p>
+
+    <div class="quiz-q" data-answer="2">
+      <p class="qtext">1 · Your body text measures 4.499:1 against its background. Where does that land under WCAG 2.2 SC 1.4.3?</p>
+      <button class="qopt" type="button">A · It passes, because it rounds to 4.5:1</button>
+      <button class="qopt" type="button">B · It passes if the font is bold</button>
+      <button class="qopt" type="button">C · It fails, because ratios are never rounded up</button>
+      <p class="qwhy">4.5:1 is the minimum for normal text and there is no rounding. 4.499:1 fails. The 3:1 threshold is for large text only, meaning 18pt or 14pt bold, and bold alone at body size does not get you there.</p>
+    </div>
+
+    <div class="quiz-q" data-answer="1">
+      <p class="qtext">2 · Copilot generates a well-written paragraph of speaker notes for each slide. You read it out, word for word, from the notes pane. What happens?</p>
+      <button class="qopt" type="button">A · Nothing, notes are not on screen so redundancy does not apply</button>
+      <button class="qopt" type="button">B · Comprehension drops, because you are narrating the words already on the slide</button>
+      <button class="qopt" type="button">C · It improves, because the wording is more polished than yours</button>
+      <p class="qwhy">The generated paragraph restates the slide, so reading it aloud is exactly Mayer's redundancy case: graphics plus narration plus the same words on screen. In the simulator that is 91 down to 71, a twenty point cost. Cut the notes to cues and the trap disappears.</p>
+    </div>
+
+    <div class="quiz-q" data-answer="0">
+      <p class="qtext">3 · Which AI deck tool claims WCAG conformance for the decks it generates?</p>
+      <button class="qopt" type="button">A · None of them, and Canva says outright that no automated checker can guarantee compliance</button>
+      <button class="qopt" type="button">B · Gamma, following its formal screen-reader audit</button>
+      <button class="qopt" type="button">C · All of them, since they use accessible templates by default</button>
+      <p class="qwhy">No AI deck tool claims conformance for its output. Canva's own help documentation states that no automated accessibility checker can guarantee compliance, because manual testing with assistive technology is required. Gamma has completed no formal screen-reader audit and makes no specific compatibility claims. Accessibility is a gate you own.</p>
+    </div>
+
+    <p class="quiz-score"></p>
+  </section>
+
+  <!-- ============ OFFICIAL COVERAGE ============ -->
+  <section class="section" id="official">
+    <div class="section-kicker">
+      <span class="klabel">Sources covered</span>
+      <h2>What this session teaches, and where it came from</h2>
+    </div>
+    <div class="covered">
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">WCAG 2.2 SC 1.4.3 contrast minimum</span><span class="note">Taught as a gate with real arithmetic: 4.5:1 normal, 3:1 large at 18pt or 14pt bold, never rounded up</span></div>
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">Microsoft: accessible presentations</span><span class="note">Unique slide titles, reading order, alt text and the built-in Accessibility Checker, all four taught as manual steps</span></div>
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">Canva and Gamma accessibility statements</span><span class="note">Quoted directly. No AI deck tool claims WCAG conformance for its output, and the page says so plainly</span></div>
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">Copilot speaker notes and structural review</span><span class="note">All-slides and current-slide generation, the under-50-slides guidance, and the question-anticipation pass used as an adversary</span></div>
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">Mayer, redundancy principle</span><span class="note">Applied directly to speaker notes. The twenty point cost of reading the slide aloud is the whole of Part 1</span></div>
+      <div class="covered-row"><span class="status pill light">◐</span><span class="name">Export behaviour: Gamma, Canva, Google Slides</span><span class="note">The verified traps are taught. Full tool-by-tool coverage lives in session 5</span></div>
+      <div class="covered-row"><span class="status pill light">◐</span><span class="name">Assistive-technology testing in practice</span><span class="note">Named as the manual step that no checker replaces. Actually running a screen reader is a different course</span></div>
+    </div>
+    <p class="mono" style="margin-top:14px">Full source map with every URL: <span class="mono">materials/official-course-map.md</span> in this repo. Certificates, videos and assessments stay with the official providers.</p>
+  </section>
+
+  <!-- ============ CHEAT SHEET ============ -->
+  <section class="cheat" id="cheatsheet">
+    <h3>Session 6 cheat sheet <span>· pin this</span></h3>
+    <div class="grid-2">
+      <div class="cheat-item"><b>A note is a glance</b><span>One 4-word cue, one transition fragment, the one figure you must quote exactly. Delete the prose.</span></div>
+      <div class="cheat-item"><b>The adversary prompt</b><span>"Name the one question per slide that would embarrass me. Do not compliment anything." Three answers go in the appendix as real slides.</span></div>
+      <div class="cheat-item"><b>The contrast rule</b><span>4.5:1 normal text, 3:1 large (18pt or 14pt bold). Never rounded. 4.499:1 fails.</span></div>
+      <div class="cheat-item"><b>The four manual items</b><span>Unique titles, reading order, alt text, run the Accessibility Checker. No tool does these for you.</span></div>
+      <div class="cheat-item"><b>The honest bottom line</b><span>No AI deck tool claims WCAG conformance. Canva: no automated checker can guarantee compliance. This gate is yours.</span></div>
+      <div class="cheat-item"><b>The pre-send check</b><span>Export, open it where the room will, check page 1 and the busiest chart, check the fonts by name.</span></div>
+      <div class="cheat-item"><b>The last nine points</b><span>82 with every design lever on. 91 only with contrast fixed. Accessibility is not the tidy-up, it is the widest lever left.</span></div>
+      <div class="cheat-item"><b>The two traps, forever</b><span>Reading the slide aloud costs 20 points. Adding bullets to be thorough costs 15. Both feel safer.</span></div>
+    </div>
+  </section>
+
+  <div class="callout next">
+    <span class="nx-pill">What you own now</span>
+    <p>Six sessions, one real deck, and three things that are yours to keep. A deck that passes the 30-second test. The test itself, which you can run on any slide for the rest of your career in thirty seconds and one honest question. And one method you can defend with a citation rather than a preference, which is Garner and Alley 2013, and which is the difference between having taste and having an argument. The tools will change again next year. None of those three will. Come back to <a href="../index.html">the session list</a> whenever a deck is fighting you, and the rest of the shelf is at <a href="https://phoebefu6.github.io/learn-with-phoebe/">Learn with Phoebe</a>.</p>
+  </div>
+
+  <footer class="pagefoot">
+    <span>Session 6 of 6 · learn-ai-ppt-with-phoebe · by Phoebe Fu &nbsp;·&nbsp; 📚 <a href="https://phoebefu6.github.io/learn-with-phoebe/">Learn with Phoebe ↗</a></span>
+    <span><a href="../index.html">← All sessions</a> &nbsp;·&nbsp; <a href="01-the-30-second-test.html">Start again with the simulator's ceiling unlocked →</a></span>
+  </footer>
+
+</main>
+
+<script src="../assets/app.js?v=1"></script>
+</body>
+</html>
