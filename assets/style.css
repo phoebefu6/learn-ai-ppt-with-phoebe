@@ -1328,3 +1328,26 @@ figure.zoomable.can-scroll figcaption::after {
   .pl-tscore { width: 120px; }
   .pl-tname { white-space: normal; }
 }
+
+
+/* ---------- agenda bar ---------- */
+/* Restored 2026-08-26. This block was missing from the aiap batch stylesheet while
+   older course repos had it, so the masthead agenda rendered as run-on text.
+   Band text colours are computed per palette rather than copied, because this
+   batch uses much paler soft tones than the repo the block came from. */
+.agenda {
+  display: flex;
+  border-radius: 999px;
+  overflow: hidden;
+  margin: 1.4rem 0 0;
+  font-size: .72rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.agenda span { padding: .45rem .3rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+.agenda .a1 { background: var(--indigo-deep); color: #fff; }
+.agenda .a2 { background: #974CDE; color: #fff; } /* darkened from var(--indigo-mid) #A855F7: neither white (3.96) nor ink (4.31) cleared 4.5 on the original */
+.agenda .a3 { background: var(--amber); color: var(--ink); }
+.agenda .a4 { background: var(--indigo-soft); color: var(--ink); }
